@@ -1,4 +1,4 @@
-package enderecos
+package main
 
 import "strings"
 
@@ -10,7 +10,7 @@ func TipoEndereco (endereco string) string {
 
 	for _, tipo := range tiposValidos{
 		if tipo == primeiraPalavraDoEndereco{
-			return primeiraPalavraDoEndereco
+			return strings.Title(primeiraPalavraDoEndereco)
 		}
 	}
 	return "Tipo inválido"
